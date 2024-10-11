@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+  padding: 0;
+    height: 100vh;
+    overflow: hidden; 
+}
+.logo{
+  margin-bottom: -60px; 
+}
+
+.divider{
+  width: 100%;
+  height: 200px;
+  border-bottom: solid 1px;
+  color: #fb271b;
+}
+
+.carousel-img {
+  width: 550px;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.5s ease, width 0.5s ease;
+  border: solid 1px #fb271b;
+}
+
+.active {
+  z-index: 3;
+ 
+  transform: scale(1.5);
+}
+
+.carousel-img:not(.active) {
+z-index: -1;
+}
