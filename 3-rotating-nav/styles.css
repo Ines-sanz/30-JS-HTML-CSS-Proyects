@@ -49,3 +49,26 @@ body{
   z-index: 1;
   transform: scale(1.5);
 }
+
+.active {
+  z-index: 1;
+  transform: scale(1.5);
+}
+
+.myIcons {
+  margin-top: 5%;
+}
+
+.h3-title {
+  font-family: "EB Garamond", serif;
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.myFooter {
+  height: 20px;
+  border-top: 1px solid #fb271b;
+}
