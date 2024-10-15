@@ -1,3 +1,7 @@
+const myContainer = document.querySelector('.myContainer');
+const openBtn = document.querySelector('.open');
+
+
 function moveToCenter(selectedImg) {
     var images = document.querySelectorAll('.carousel-img');
     
@@ -8,8 +12,7 @@ function moveToCenter(selectedImg) {
     selectedImg.classList.add('active');
 }
 
-const myContainer = document.querySelector('.myContainer');
-const openBtn = document.querySelector('.open');
+
 
 openBtn.addEventListener('click', () => {
  if(myContainer.classList.contains('show-nav')) { 
