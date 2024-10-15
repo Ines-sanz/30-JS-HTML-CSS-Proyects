@@ -10,6 +10,36 @@ body{
 
 .myContainer {
   background-color: white;
+  transition: linear;
+}
+
+.myContainer.show-nav {
+  transform: rotate(-10deg);
+  transform-origin: top left;
+  transition: transform 0.1s linear;
+}
+
+.myContainer.show-nav + .myNav {
+  z-index: 1;
+}
+
+.open {
+  display: block;
+}
+
+.close {
+  display: none;
+}
+
+.myContainer.show-nav + .open {
+  display: none;
+}
+
+.myNav {
+  z-index: -1;
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
 }
 
 .myHeader {
