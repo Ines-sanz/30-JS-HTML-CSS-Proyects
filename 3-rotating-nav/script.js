@@ -7,3 +7,13 @@ function moveToCenter(selectedImg) {
 
     selectedImg.classList.add('active');
 }
+
+const myContainer = document.querySelector('.myContainer');
+const openBtn = document.querySelector('.open');
+
+openBtn.addEventListener('click', () => {
+ if(myContainer.classList.contains('show-nav')) { 
+    myContainer.classList.remove('show-nav');
+}
+ else myContainer.classList.add('show-nav');
+});
